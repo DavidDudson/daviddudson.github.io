@@ -8,18 +8,12 @@ const cp = require('child_process');
 const imagemin = require('gulp-imagemin');
 const browserSync = require('browser-sync');
 const del = require('del');
-const html2pdf = require('gulp-html-pdf');
 const rename = require('gulp-rename');
 const sanitize = require('sanitize-filename');
 const babel = require('gulp-babel');
 const autoprefixer = require('gulp-autoprefixer');
 
 const jekyllCommand = (/^win/.test(process.platform)) ? 'jekyll.bat' : 'jekyll';
-
-// Don't even bother logging, its not worth the effort with pdf gen.
-const swallowError = function(err) {
-	this.emit('end');
-};
 
 /*
  * Build the Jekyll Site
@@ -28,18 +22,6 @@ const swallowError = function(err) {
 gulp.task('jekyll-build', function (done) {
 	return cp.spawn(jekyllCommand, ['build'], {stdio: 'inherit'})
 		.on('close', done);
-});
-
-gulp.task('pdf', function () {
-	return gulp.src('_site/pdf.html')
-		.pipe(plumber())
-        .pipe(html2pdf({
-            phantomPath: 'phantomjs',
-            width: "200",
-            height: "282",
-            base: "https://daviddudson.github.io"}))
-		.pipe(rename(sanitize('DavidDudsonCV.pdf')))
-		.pipe(gulp.dest('assets/pdf/'));
 });
 
 /*
@@ -131,7 +113,7 @@ gulp.task('cpToSrc', function() {
         .pipe(gulp.dest('./'));
 });
 
-gulp.task('reload', gulp.series(gulp.parallel('js', 'pdf'), 'jekyll-rebuild'));
+gulp.task('reload', gulp.series(gulp.parallel('js'), 'jekyll-rebuild'));
 
 gulp.task('build', gulp.series(gulp.parallel('js', 'sass'), 'jekyll-build'));
 
@@ -153,12 +135,11 @@ gulp.task('clean', function (cb) {
     cb()
 });
 
-// 1. Jekyll build first to generate the correct html structure in _site.
-// 2. Generate pdf based off pdf.html
-// 3. build assets again (with the new pdf included)
-// 4. clean up unnecessary files and adjust directory structure to that of github pages
-// TODO: We probably do not need to build twice, however it does not affect
-// local build times so it's not major
-const deploy = gulp.series('jekyll-build', 'pdf', 'jekyll-build', 'clean', 'cpToSrc');
+gulp.task('pdf', function (cb) {
+	gulp.src('src/pdf/*')
+		.dest('assets/pdf')
+});
+
+const deploy = gulp.series('jekyll-build', 'clean', 'cpToSrc', 'pdf');
 
 gulp.task('deploy', deploy);
