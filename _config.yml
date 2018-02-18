@@ -14,7 +14,7 @@ github_username:  daviddudson
 linkedin:  daviddudson
 phone: +64 27 869 0606
 src: https://github.com/DavidDudson/daviddudson.github.io/tree/develop
-pdf: /assets/pdf/DavidDudsonCV.pdf
+pdf: https://daviddudson.github.io/assets/pdf/DavidDudsonCV.pdf
 
 google-analytics:
   id: 'UA-42525615-1'
