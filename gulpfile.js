@@ -135,9 +135,9 @@ gulp.task('clean', function (cb) {
     cb()
 });
 
-gulp.task('pdf', function (cb) {
-	gulp.src('src/pdf/*')
-		.dest('assets/pdf')
+gulp.task('pdf', function () {
+	return gulp.src('src/pdf/*')
+		.pipe(gulp.dest('assets/pdf'))
 });
 
 const deploy = gulp.series('jekyll-build', 'clean', 'cpToSrc', 'pdf');
