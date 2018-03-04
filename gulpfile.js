@@ -113,9 +113,14 @@ gulp.task('cpToSrc', function() {
         .pipe(gulp.dest('./'));
 });
 
-gulp.task('reload', gulp.series(gulp.parallel('js'), 'jekyll-rebuild'));
+gulp.task('pdf', function () {
+    return gulp.src('src/pdf/*.pdf')
+        .pipe(gulp.dest('assets/pdf'))
+});
 
-gulp.task('build', gulp.series(gulp.parallel('js', 'sass'), 'jekyll-build'));
+gulp.task('reload', gulp.series(gulp.parallel('js', 'pdf'), 'jekyll-rebuild'));
+
+gulp.task('build', gulp.series(gulp.parallel('js', 'sass', 'pdf'), 'jekyll-build'));
 
 gulp.task('default', gulp.series('build', 'browser-sync', 'watch'));
 
@@ -133,11 +138,6 @@ gulp.task('clean', function (cb) {
         'package.json'
     ]);
     cb()
-});
-
-gulp.task('pdf', function () {
-	return gulp.src('src/pdf/*')
-		.pipe(gulp.dest('assets/pdf'))
 });
 
 const deploy = gulp.series('jekyll-build', 'clean', 'cpToSrc', 'pdf');
