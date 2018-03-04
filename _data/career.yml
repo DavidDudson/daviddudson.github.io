@@ -2,44 +2,43 @@ current:
   company: Electric Memory IT (EMIT)
   contracted_to: Process Systems Enterprise (PSE)
   time: June 2015 - Present
-  details: >
-    Based in Palmerston North, New Zealand, Contracting out to Process Systems Enterprise,
-    which is based in London.
   product: >
    I have been a part of many projects at PSE/EMIT.
    They have challenged me and allowed me to grow as a developer.
   projects:
     - name: New Language Engine (NLE)
       details: >
-        Using Antlr4 as our parser and lexer, with Scala as the language of choice,
-        I collaborate in a team of three to build a fast, immutable, threadsafe and
-        storage efficient language module. I wrote most of the Antlr grammars,
-        the parsing logic and a large portion of the language model.
-        The rest of the team worked on integration with existing code.
+       Using Scala for AST and validation logic,
+       and Antlr4 as our parser and lexer, I collaborate in a
+       team of three to build a fast, immutable, threadsafe and
+       storage efficient language module. I have written most of the
+       Antlr grammars, the parsing logic and a large portion of the
+       language model. Whilst the rest of the team worked on integration
+       with existing code.
       key_skills:
+        - Scala
         - Antlr4
         - Anltr2
-        - Scala
         - Java
         - C++
     - name: Maven to Gradle migration
       details: >
         I led the Gradle migration project. Our build system is rather complex,
-        we have multiple code generation steps, multiple JVM languages being used,
-        extra post-compile tasks (obfuscation and encryption) and multiple repositories.
-        The build was designed to be modular via Gradle plugins. I had to manage many other people,
-        other developers, our CI team, our Kernel team. The build had to run fast and support both
-        windows and Linux.
+         we have multiple code generation steps, multiple JVM languages
+         being used, extra post-compile tasks (obfuscation and encryption) and
+         multiple repositories. The build was designed to be modular via
+         Gradle plugins. I had to manage other developers such as the CI and
+         Kernel teams. The build had to run fast and support both Windows and
+         Linux.
       key_skills:
-        - Groovy
         - Gradle
+        - Groovy
         - Java
     - name: Flowsheet Routing
       details: >
-        Flowsheet routing is the act of ensuring the connection between nodes on a flowsheet are orthogonal.
-        For user-generated projects this could happen on project load and could trigger up to 8 hour
-        GUI freezes. I moved all routing calculation off the event dispatch thread (Swing’s GUI thread),
-        made them async, and ensured all routing actions would be undoable, parallelizable and cancellable.
+        Flowsheet routing is the act of ensuring the connection between nodes
+        on a flowsheet are orthogonal. For user-generated projects this
+        could happen on project load and could trigger up to 8 hour GUI freezes. I moved the route calculations off the event dispatch thread (Swing’s GUI thread), ensuring asynchronous execution. I also altered all routing actions so they would be undoable, parallelizable and cancellable.
       key_skills:
        - Swing
        - Java

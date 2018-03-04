@@ -5,18 +5,19 @@ conferences:
  - linux.conf.au 2018
 open_source:
   info: >
-    My occupation is also my hobby. I'm always looking for more ways to help out the open source community.
-    I will often write PR’s for libraries, help to manage and report issues or assist with support
-    on Gitter.
+    My occupation is also my hobby,
+    in my free time I contribute to the open source community.
+    I often write PR’s for libraries, assist with support on Gitter
+    and help with issue management.
   projects:
     - name: scalagen
       involvement: Author
       link: https://github.com/scalameta/scalagen
       details: >
-        Scalagen is a work in progress code generation library for Scala.
-        Scalagen can support any variant and version of Scala. I authored this
-        library primarily because the existing scalameta/paradise library was
-        deprecated and scalamacros/paradise is not ide or user friendly. I manage everything from issues to design and implementation.
+        I authored this library primarily because the existing
+         scalameta/paradise library was deprecated,
+          and scalamacros/paradise is not ide or user friendly.
+          I manage everything from issues to design and implementation.
     - name: Elysium
       involvement: Author
       link: https://github.com/DavidDudson/Elysium
@@ -28,15 +29,19 @@ open_source:
       involvement: Maintainer
       link: https://github.com/scalameta/scalameta
       details: >
-        A huge center point for Scala’s tooling. Exists primarily as an AST for the scala language.
-        I am the co-author of the scalameta-contrib module, built to simplify interactions with scalameta.
+        A huge center point for Scala’s tooling which exists
+        primarily as an AST manipulation library.
+        I am the co-author of the scalameta-contrib module,
+        built to simplify interactions with scalameta.
     - name: scalameta paradise
       involvement: Maintainer
       link: https://github.com/scalameta/paradise
       details: >
-        Macro library for Scala. Now deprecated in favor of scalameta/scalagen (Annotation Macros) and
-        scalacenter/macros (Def Macros). I wrote a large portion of the annotation processing logic,
-        to ensure feature parity with scalamacros/paradise.
+        Macro library for Scala. Now deprecated in favor of
+        scalameta/scalagen (annotation macros) and scalacenter/macros
+        (def macros). I have written a large portion of the annotation
+        processing logic used to ensure feature parity with
+        scalamacros/paradise.
 community:
   info:
     I attend as many talks and events as possible, via Massey University,

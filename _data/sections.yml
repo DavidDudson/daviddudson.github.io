@@ -1,6 +1,9 @@
 - title: About Me
   link: about
 
+- title: Technical
+  link: tech
+
 - title: Open Source
   link: opensource
 
@@ -8,9 +11,6 @@
   link: employer
 
 - link: past_employment
-
-- title: Technical
-  link: tech
 
 - link: conferences
 
