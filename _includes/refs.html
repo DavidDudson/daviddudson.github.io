@@ -1,5 +1,3 @@
-<p>{{site.data.references.details}}</p>
-
 <div class="standard_flex">
 {% for person in site.data.references.people %}
     <div class="standard_flex_item">
@@ -8,8 +6,12 @@
             <b>Relationship:</b> {{person.relationship}} <br>
             <b>Location:</b> {{person.location}} <br>
             <b>Timezone:</b> {{person.timezone}} <br>
-            <b>Email:</b> {{person.email}} <br>
-            <b>Phone:</b> {{person.phone}}</p>
+            {% if person.email %}
+                <b>Email:</b> {{person.email}} <br>
+            {% endif %}
+            {% if person.phone %}
+                <b>Phone:</b> {{person.phone}}</p>
+            {% endif %}
         <p>{{person.details}}</p>
     </div>
 {% endfor %}

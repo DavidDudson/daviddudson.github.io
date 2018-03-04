@@ -15,9 +15,9 @@ open_source:
       link: https://github.com/scalameta/scalagen
       details: >
         I authored this library primarily because the existing
-         scalameta/paradise library was deprecated,
-          and scalamacros/paradise is not ide or user friendly.
-          I manage everything from issues to design and implementation.
+        scalameta/paradise library was deprecated,
+        and scalamacros/paradise is not ide or user friendly.
+        I manage everything from issues to design and implementation.
     - name: Elysium
       involvement: Author
       link: https://github.com/DavidDudson/Elysium

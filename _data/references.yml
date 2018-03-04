@@ -1,5 +1,3 @@
-details: >
-  Personal phone numbers available on request.
 people:
   - name: Duane Griffin
     relationship: Cofounder of Electric Memory IT
@@ -17,7 +15,3 @@ people:
     timezone: Greenwich Mean Time (GMT - UTC+0)
     email: andrewb@psenterprise.com
     phone: +44 20 8563 0888
-  - name: Steven Carpenter
-    relationship: Ex Manager of Dick Smith Palmerston North
-    location: Palmerston North, New Zealand
-    timezone: New Zealand Standard Time (NZST - UTC+13)

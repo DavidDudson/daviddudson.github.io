@@ -1,5 +1,11 @@
 <div>
     <h3>Conferences</h3>
 
-    <p>{{site.data.cpd.conferences.info}}</p>
+    <ul class="standard_flex centered">
+        {% for conference in site.data.cpd.conferences %}
+        <li class="standard_flex_item ">
+            {{conference}}
+        </li>
+        {% endfor %}
+    </ul>
 </div>
