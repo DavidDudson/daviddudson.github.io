@@ -6,32 +6,44 @@ current:
     Based in Palmerston North, New Zealand, Contracting out to Process Systems Enterprise,
     which is based in London.
   product: >
-    I am working on the gPROMS family of integrated modelling environments (IME's),
-    designed for various engineers who design incredibly complex systems.
-    The kernel is written in C++ and Fortran, with the UI written in Java.
-    gPROMS is primarily a procedural/declarative language that is used to run simulations/optimizations etc.
-    Thus the IME's act much like an IDE would for a Software Developer.
-    With large global clients such as Eli Lilly Pharmaceuticals and Shell Petroleum
-    I take the quality of code I produce very seriously.
+   I have been a part of many projects at PSE/EMIT.
+   They have challenged me and allowed me to grow as a developer.
   projects:
     - name: New Language Engine (NLE)
       details: >
-        The purpose of this project was primarily to remove
-        a large chunk of the remaining CORBA code in our codebase.
         Using Antlr4 as our parser and lexer, with Scala as the language of choice,
-        we managed to build an fast, immutable, threadsafe and storage efficient language module.
-    - name: Moving from Maven to Gradle
+        I collaborate in a team of three to build a fast, immutable, threadsafe and
+        storage efficient language module. I wrote most of the Antlr grammars,
+        the parsing logic and a large portion of the language model.
+        The rest of the team worked on integration with existing code.
+      key_skills:
+        - Antlr4
+        - Anltr2
+        - Scala
+        - Java
+        - C++
+    - name: Maven to Gradle migration
       details: >
-        Our build system is rather complex, we have multiple "code generation" steps,
-        multiple JVM languages being used, extra post-compile tasks (obfuscation and encryption)
-        and multiple repositories. The build was designed to be modular via Gradle plugins.
+        I led the Gradle migration project. Our build system is rather complex,
+        we have multiple code generation steps, multiple JVM languages being used,
+        extra post-compile tasks (obfuscation and encryption) and multiple repositories.
+        The build was designed to be modular via Gradle plugins. I had to manage many other people,
+        other developers, our CI team, our Kernel team. The build had to run fast and support both
+        windows and Linux.
+      key_skills:
+        - Groovy
+        - Gradle
+        - Java
     - name: Flowsheet Routing
       details: >
-        Our users were generating models in other applications, with 2000+ models and connections between them.
-        The routing took place on Swings GUI Thread (EDT) and thus blocked the user from working while it happened.
-        For user-generated projects this could happen on project load and trigger up to 8 hour GUI freezes.
-        Of course, this is not acceptable, thus I moved all routing off the EDT. The largest problem was undo.
-        We had asynchronous edits that had to be managed within Swings very synchronous and sequential undo system.
+        Flowsheet routing is the act of ensuring the connection between nodes on a flowsheet are orthogonal.
+        For user-generated projects this could happen on project load and could trigger up to 8 hour
+        GUI freezes. I moved all routing calculation off the event dispatch thread (Swing’s GUI thread),
+        made them async, and ensured all routing actions would be undoable, parallelizable and cancellable.
+      key_skills:
+       - Swing
+       - Java
+       - Threading
 past:
   - name: Dick Smith Electronics
     role: Salesman
@@ -46,8 +58,7 @@ education:
   - name: Massey University
     qualification: Bachelor of Information Science. Computer Science Major
     status: Compulsories complete in 2015
-    explanation: Started working fulltime before completion currently
-     finishing electives via part-time study.
+    explanation: Currently finishing electives 1 paper at a time while working.
   - name: New Plymouth Boys' High School (NPBHS)
     qualification: NCEA level 3
     status: Complete in 2011

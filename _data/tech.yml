@@ -1,53 +1,41 @@
 os:
   details: >
-    I prefer Unix based systems for general development, usually one of NixOS, Ubuntu, Fedora or OSX.
-
+    I am experienced with all 3 major operating systems. Linux, OSX and Windows.
+    I am most experienced with Linux, primarily NixOS, and Ubunutu.
 version_control:
   details: >
-    I exclusively use git for version control. I am very competent
-    with git and have written a number of internal scripts for it.
+    I use git for version control. I am competent with git and have written many programs interacting
+    with Git repositories. I am familiar with git-flow.
 
 libraries:
   - name: Scala
     details: >
-      I have been writing Scala code since 2012, working with it in industry for the past 2 years.
-      I consider myself an advanced Scala user and have given talks on Scala before.
-      Most of my open source work has been creating and/or contributing to Scala libraries.
-      I've a large number of Scala libraries, but most commonly Cats, Monix, Circe and Scalameta.
+      I have 6 years Scala experience, 2 and a half in industry.
+      I have given talks and workshops on Scala. I am very knowledgeable
+      on Scala and its ecosystem.
   - name: Java
     details: >
-      Java was the first language I learnt. Self taught while I was at high school I have been writing Java code since 2011.
-      A large portion of the codebase I work in is Java and I consider myself an advanced Java user.
+      I have 7 years Java experience, 2 and a half in industry.
+      I am very competent with Java and the JVM, spending a lot of
+      time profiling and optimizing at a very low level.
   - name: Python
     details: >
-      I use Python mostly for scripting and web scraping. I've attended multiple
-      Kiwi Pycons and always enjoyed the friendliness of the Python community.
+      I have 5 years Python experience, with a small amount in industry.
+      I use occasionally use Python for small web servers (Django or Flask)
+      and command line tooling.
   - name: Javascript
     details: >
-      I've written a lot of javascript, mostly during my time at university,
+      I've written a lot of Javascript, mostly during my time at university,
       I have experience ES5, ES6, Typescript and Coffeescript.
       I've also written code in AngularJS, Angular and React,
       using tools such as NPM, Bower, Gulp and Webkit.
-  - name: Antlr 4
-    details: >
-      A large portion of my work recently has been writing ANTLR4 Grammars,
-      a Scala AST to go with them and ensuring performance has been optimal.
-      Due to this, I've subclassed and replaced large portions of the ANTLR
-      code as it was non-optimal, generating far too much garbage for our uses.
-  - name: Ansible
-    details: >
-      I have written multiple sets of Ansible scripts, for provisioning build machines and setting up dev environments.
-  - name: Gradle
-    details: >
-      Due to being in charge of the Maven => Gradle porting of our build system at work,
-      I have become a competent Gradle/Groovy developer.
   - name: Category theory
     details: >
-      Last year I taught myself basic category theory. I wanted to get a ground up understanding of
-      category theory so that when working with the Cats library, I could understand the reasoning and terminology.
-      In particular, I wanted to develop an understanding the Free Monads and Natural Transformations.
-      I still want to do far more research into this field and personally believe it should
-      be part of every Computer Science curriculum globally.
+      I recently learnt basic category theory.
+      This helped me understand programming from a methematical perspective.
+      I wanted to develop an understanding the Free Monads and
+      Natural Transformations. I still want to do far more research into
+      this field.
   - name: Functional Programming
     details: >
       I believe that Functional Programming is a far too common of a phrase these days, when a lot of people mean "programming with functions".
@@ -55,29 +43,9 @@ libraries:
       I use purely immutable data structures and try to be as pure as possible,
       handling effects at the type level, where it does not affect Readability, Maintainability or Performance.
       I can proudly say that I have not deliberately used the keyword "null" in my code, for well over a year.
-
 ides:
- - name: IntelliJ IDEA
-   details: >
-        I use IntelliJ every day for most development.
-        For Java specifically, I struggle to see a reason to use anything else.
- - name: Webstorm
-   details: >
-       Go to for Web development, although I do not feel an IDE is anywhere
-       near as useful for web dev as it is for Java dev,
-       I occasionally use a text editor instead.
- - name: Atom
-   details: >
-       My usual text editor, I use it quite a bit for web development as well.
- - name: Gedit
-   details: >
-       I use Gedit for Git related work. Atom starts too slow and I have
-       not yet spent enough time with Vim to use that.
-
-profilers:
- - name: Yourkit
-   details: >
-    I would recommend Yourkit to anyone, Yourkit makes optimizing code a breeze.
- - name: VisualVM
-   details: >
-    I stopped using VisualVM after we purchased Yourkit. Yourkit really is far superior here.
+ - IntelliJ IDEA
+ - Pycharm
+ - Webstorm
+ - VSCode
+ - Atom
