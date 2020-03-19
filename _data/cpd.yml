@@ -5,10 +5,8 @@ conferences:
  - linux.conf.au 2018
 open_source:
   info: >
-    My occupation is also my hobby,
-    in my free time I contribute to the open source community.
-    I often write PR’s for libraries, assist with support on Gitter
-    and help with issue management.
+    In the past I have worked extensively in the open source section of the scala ecosystem.
+    Although in the last 2 years I have done no open source work.
   projects:
     - name: scalagen
       involvement: Author
@@ -17,14 +15,15 @@ open_source:
         I authored this library primarily because the existing
         scalameta/paradise library was deprecated,
         and scalamacros/paradise is not ide or user friendly.
-        I manage everything from issues to design and implementation.
+        I managed everything from issues to design and implementation.
+        No longer maintained as I left the Scala ecosystem.
     - name: Elysium
       involvement: Author
       link: https://github.com/DavidDudson/Elysium
       details: >
         Elysium was an exploration of what could be accomplished with Macro Annotations,
         I also wrote a macro to develop macros. All Elysium macros are strongly typed and became
-        the foundation of scalagen’s API.
+        the foundation of scalagen’s API. No longer maintained as I left the Scala ecosystem.
     - name: scalameta
       involvement: Maintainer
       link: https://github.com/scalameta/scalameta
@@ -44,8 +43,5 @@ open_source:
         scalamacros/paradise.
 community:
   info:
-    I attend as many talks and events as possible, via Massey University,
-    IT Professionals of New Zealand (ITPNZ) or
-    the Palmerston North Software Development Meetup Group.
-    Once I have arrived in Cairns I will be joining IT Professionals Australia.
-    I have also given a talk and workshop for Scala to around 30 people at the meetup group.
+    I enjoy attend conferences and programming events,
+    I would like to grow the Software Development community in Cairns and potentially start a meetup group.

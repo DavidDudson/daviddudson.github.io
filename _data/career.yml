@@ -1,10 +1,66 @@
 current:
+  company: Didgigo
+  time: March 2017 - Present
+  product: >
+    Didgigo is a travel documentation solution for large tour operators globally.
+    Supporting large clients such as Hello World Group, Jonview Canada, Abbey Group Ireland & UK and Tahiti Nui
+    I took Didgigo from approximately 8000 total itineraries to over 135,00.
+    I have managed projects and junior developers, I attended World Travel Mart London 2019 to
+    assist with technical discussions relating to sales. As a fullstack developer I have been in charge
+    of our Kubernetes cluster, nodejs based servers, mobile application and many other aspects of the business.
+    The job has allowed me to understand how developers can enable potential business success and profitability.
+  projects:
+    - name: Tripigo (Mobile App)
+      details: >
+        Tripigo is the Mobile App I produced for Didgigo. A leading edge itinerary viewer,
+        Tripigo is built on Ionic, a hybrid app built using web technologies for iOS and Android.
+        Foreign language support, realtime group chat for tour groups, High quality imagery,
+        curated things to do an see near destinations.
+      key_skills:
+        - Typescript
+        - Angular 9
+        - Ionic
+        - Capacitor
+        - Sass
+        - Firebase/Firestore (NoSQL)
+    - name: Kubernetes Cluster
+      details: >
+        I organised, set up and maintained our Kubernetes Cluster on Google Cloud Platform. with 50+
+        running containers and well over 99.99% uptime it enabled us to prepare for a potential 500,000 documents in 2021
+      key_skills:
+        - Kubernetes
+        - Docker
+        - Stackdriver
+        - Google Cloud Platform
+    - name: Didgigo API and Import Server
+      details: >
+        The Didgigo API was produced so we could move away from using a single dedicated server, into a cloud based envorinment.
+        The API enabled external customers to interface directly with Didgigo, aswell as all cloud based systems using
+        the API for general activities. We also interfaced with a number of pieces of Tour Operator software,
+        such as Tourplan and Softrip to automate the import of content (Hotel/Tour content) and production of documentation (Itineraries).
+      key_skills:
+        - Typescript
+        - NodeJS
+        - SOAP
+        - REST
+        - MSSQL
+    - name: Productivity Suite
+      details: >
+        The Productivity Suite is and Angular 9 web application to introspect how imports are running.
+        With the ability to be as transparent as possible with regards to how data is transformed from
+        third party systems into the Didgigo data model and see which itineraries have been imported.
+        the entire system has a consistent format so using the system is the same for all Third Party API's.
+      key_skills:
+        - Angular 9
+        - Typescript
+        - Sass
+previous:
   company: Electric Memory IT (EMIT)
   contracted_to: Process Systems Enterprise (PSE)
-  time: June 2015 - Present
+  time: June 2015 - March 2017
   product: >
-   I have been a part of many projects at PSE/EMIT.
-   They have challenged me and allowed me to grow as a developer.
+   I was part of many projects at PSE/EMIT.
+   They challenged me and allowed me to grow as a developer under the guidance of a very good team.
   projects:
     - name: New Language Engine (NLE)
       details: >
@@ -57,7 +113,7 @@ education:
   - name: Massey University
     qualification: Bachelor of Information Science. Computer Science Major
     status: Compulsories complete in 2015
-    explanation: Currently finishing electives 1 paper at a time while working.
+    explanation: Left for fulltime development work before completing all electives.
   - name: New Plymouth Boys' High School (NPBHS)
     qualification: NCEA level 3
     status: Complete in 2011

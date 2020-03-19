@@ -1,4 +1,9 @@
 people:
+  - name: Matt McKinley
+    relationship: Founder and CEO Of Didgigo
+    location: Cairns, Australia
+    timezone: Australian Eastern Standard Time (AEST - UTC+10)
+    email: matt.mckinley@didgigo.com.au
   - name: Duane Griffin
     relationship: Cofounder of Electric Memory IT
     location: Palmerston North, New Zealand

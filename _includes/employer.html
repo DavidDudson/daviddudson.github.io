@@ -1,6 +1,5 @@
 <div>
     <p><b>Company: </b>{{site.data.career.current.company}}<br>
-        <b>Contracted To: </b>{{site.data.career.current.contracted_to}}<br>
         <b>Time Employed: </b>{{site.data.career.current.time}}</p>
 
     <p>{{site.data.career.current.details}}
@@ -12,6 +11,28 @@
 
     <div class="standard_flex">
         {% for project in site.data.career.current.projects %}
+        <div class="standard_flex_item">
+            <h5>{{project.name}}</h5>
+            <p>{{project.details}}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+    <h3>Previous</h3>
+
+    <p><b>Company: </b>{{site.data.career.previous.company}}<br>
+        <b>Contracted To: </b>{{site.data.career.previous.contracted_to}}<br>
+        <b>Time Employed: </b>{{site.data.career.previous.time}}</p>
+
+    <p>{{site.data.career.previous.details}}
+        <br>
+        <br>
+        {{site.data.career.previous.product}}</p>
+
+    <h4>Projects</h4>
+
+    <div class="standard_flex">
+        {% for project in site.data.career.previous.projects %}
         <div class="standard_flex_item">
             <h5>{{project.name}}</h5>
             <p>{{project.details}}</p>

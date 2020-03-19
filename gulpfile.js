@@ -8,8 +8,6 @@ const cp = require('child_process');
 const imagemin = require('gulp-imagemin');
 const browserSync = require('browser-sync');
 const del = require('del');
-const rename = require('gulp-rename');
-const sanitize = require('sanitize-filename');
 const babel = require('gulp-babel');
 const autoprefixer = require('gulp-autoprefixer');
 
